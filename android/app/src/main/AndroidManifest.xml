@@ -6,10 +6,10 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
    <application
-        android:label="absen_usm_v1"
+        android:label="Absensi Universitas Serambi Mekkah"
         android:name="${applicationName}"
         android:networkSecurityConfig="@xml/network_security_config"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"
