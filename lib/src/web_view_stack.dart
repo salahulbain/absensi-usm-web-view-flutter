@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import 'package:flutter_webview_pro/webview_flutter.dart';
 
 class WebViewStack extends StatefulWidget {
   const WebViewStack({required this.controller, super.key});
@@ -19,6 +19,7 @@ class _WebViewStackState extends State<WebViewStack> {
     return Stack(
       children: [
         WebView(
+          geolocationEnabled: true,
           javascriptMode: JavascriptMode.unrestricted,
           initialUrl: 'https://absen.serambimekkah.ac.id/login',
           onWebViewCreated: (webViewController) {
